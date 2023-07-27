@@ -5,7 +5,7 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo,menu,close } from '../assets';
 const Navbar = () => {
-  usestate
+  const [active, setactive] = useState('  ')
 
 
   return (
@@ -19,9 +19,11 @@ const Navbar = () => {
           className="flex items-center gap-2"
           onClick={() =>{
             setActive("");
+            window.scrollTo(0, 0);
           }}
         >
 
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
       </div>
     </nav>
