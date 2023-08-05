@@ -20,6 +20,10 @@ const Hero = () => {
       </div>
       </div>
       <ComputersCanvas/>
+
+      <div className=" ">
+
+      </div>
     </section>
   )
 }
